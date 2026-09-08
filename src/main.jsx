@@ -17,7 +17,6 @@ const skills = [
   { name: 'Laravel', icon: 'https://cdn.simpleicons.org/laravel' },
   { name: 'PHP', icon: 'https://cdn.simpleicons.org/php' },
   { name: 'MySQL', icon: 'https://cdn.simpleicons.org/mysql' },
-  { name: 'REST API', icon: 'https://cdn.simpleicons.org/openapiinspector' },
   { name: 'Git / GitHub', icon: 'https://cdn.simpleicons.org/github' },
   { name: 'Bootstrap', icon: 'https://cdn.simpleicons.org/bootstrap' },
   { name: 'Next.js', icon: 'https://cdn.simpleicons.org/nextdotjs' },
