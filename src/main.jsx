@@ -32,7 +32,7 @@ function App() {
 
     <main>
       <section id="home" className="hero">
-        <div className="hero-top"><span>ADITYA AHMAD PRIBADI A.K.A. JHUNKCION</span><span>FULL STACK DEVELOPER · MOBILE DEVELOPER</span></div>
+        <div className="hero-top"><span>FULL STACK DEVELOPER · MOBILE DEVELOPER</span><span>BASED IN INDONESIA</span></div>
         <div className="hero-main">
           <div className="hero-title-wrap"><div className="status-dot" /><h1>Building digital<br /><span>experiences</span> that matter.</h1></div>
           <div className="hero-photo" aria-label="Profile photo placeholder">
@@ -43,7 +43,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="hero-bottom"><p>I’m Jhunkcion — a full stack and mobile developer who turns ideas, requirements, and messy problems into useful digital products.</p><a className="circle-link" href="#work" aria-label="Scroll to work">↓</a></div>
+        <div className="hero-bottom"><p>I’m Aditya Ahmad Pribadi a.k.a. Jhunkcion — a full stack and mobile developer who turns ideas, requirements, and messy problems into useful digital products.</p><a className="circle-link" href="#work" aria-label="Scroll to work">↓</a></div>
       </section>
 
       <section id="about" className="intro section"><div className="section-label">01 — ABOUT</div><div className="intro-content"><h2>Developer by craft.<br /><span>Problem solver by nature.</span></h2><div><p>I’m a fresh graduate with a Bachelor’s degree in Informatics Engineering from <a href="https://unprimdn.ac.id/" target="_blank" rel="noreferrer">UNPRI | Universitas Prima Indonesia</a>. I work across frontend, backend, and mobile development, with a focus on clean interfaces, reliable systems, and practical engineering.</p><a className="text-link" href="https://unprimdn.ac.id/" target="_blank" rel="noreferrer">UNPRI | Universitas Prima Indonesia <span>↗</span></a></div></div></section>
