@@ -32,7 +32,7 @@ function App() {
 
     <main>
       <section id="home" className="hero">
-        <div className="hero-top"><span>FULL STACK DEVELOPER · MOBILE DEVELOPER</span><span>BASED IN INDONESIA</span></div>
+        <div className="hero-top"><span>ADITYA AHMAD PRIBADI A.K.A. JHUNKCION</span><span>FULL STACK DEVELOPER · MOBILE DEVELOPER</span></div>
         <div className="hero-main">
           <div className="hero-title-wrap"><div className="status-dot" /><h1>Building digital<br /><span>experiences</span> that matter.</h1></div>
           <div className="hero-photo" aria-label="Profile photo placeholder">
