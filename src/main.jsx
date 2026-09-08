@@ -13,6 +13,7 @@ const skills = [
   { name: 'TypeScript', icon: 'https://cdn.simpleicons.org/typescript' },
   { name: 'HTML / CSS', icon: 'https://cdn.simpleicons.org/html5' },
   { name: 'Node.js', icon: 'https://cdn.simpleicons.org/nodedotjs' },
+  { name: 'Flutter', icon: 'https://cdn.simpleicons.org/flutter' },
   { name: 'Laravel', icon: 'https://cdn.simpleicons.org/laravel' },
   { name: 'PHP', icon: 'https://cdn.simpleicons.org/php' },
   { name: 'MySQL', icon: 'https://cdn.simpleicons.org/mysql' },
