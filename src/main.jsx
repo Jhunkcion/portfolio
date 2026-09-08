@@ -36,10 +36,8 @@ function App() {
         <div className="hero-main">
           <div className="hero-title-wrap"><div className="status-dot" /><h1>Building digital<br /><span>experiences</span> that matter.</h1></div>
           <div className="hero-photo" aria-label="Profile photo placeholder">
-            <div className="photo-placeholder">
-              <span className="photo-icon">+</span>
-              <span>YOUR PHOTO</span>
-              <small>Replace /public/profile.jpg</small>
+            <div className="hero-photo">
+              <img src="/profile.jpg" alt="Aditya Ahmad Pribadi" />
             </div>
           </div>
         </div>
