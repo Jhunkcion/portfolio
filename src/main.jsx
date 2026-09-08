@@ -35,10 +35,8 @@ function App() {
         <div className="hero-top"><span>FULL STACK DEVELOPER · MOBILE DEVELOPER</span><span>BASED IN INDONESIA</span></div>
         <div className="hero-main">
           <div className="hero-title-wrap"><div className="status-dot" /><h1>Building digital<br /><span>experiences</span> that matter.</h1></div>
-          <div className="hero-photo" aria-label="Profile photo placeholder">
-            <div className="hero-photo">
-              <img src="/profile.jpg" alt="Aditya Ahmad Pribadi" />
-            </div>
+          <div className="hero-photo">
+            <img src="/profile.JPG" alt="Aditya Ahmad Pribadi" />
           </div>
         </div>
         <div className="hero-bottom"><p>I’m Aditya Ahmad Pribadi a.k.a. Jhunkcion — a full stack and mobile developer who turns ideas, requirements, and messy problems into useful digital products.</p><a className="circle-link" href="#work" aria-label="Scroll to work">↓</a></div>
