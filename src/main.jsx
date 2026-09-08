@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const projects = [
-  { title: 'SiAMang', type: 'Full Stack', stack: 'Laravel · MySQL · Bootstrap', description: 'Digital internship administration platform with registration, document upload, OTP verification, approval workflow, reporting, and multi-campus support.', url: 'https://github.com/Jhunkcion/SiAMang' },
-  { title: 'CitraComm', type: 'Web App', stack: 'Next.js · Dashboard', description: 'Printing-service storefront and admin dashboard with catalog/gallery showcase and role-based login flow.', url: 'https://github.com/Jhunkcion/citracomm' },
-  { title: 'Imigrasi Sumut', type: 'Web System', stack: 'Laravel 11 · PHP', description: 'Web application project built around a Laravel 11 backend and structured application services.', url: 'https://github.com/Jhunkcion/imigrasisumut' },
-  { title: 'API Documentation', type: 'Documentation', stack: 'HTML · CSS · JavaScript', description: 'Interactive API documentation interface with endpoint sections, HTTP methods, parameters, and expandable details.', url: 'https://github.com/Jhunkcion/BBPSDMP-Komdigi-s-API-Docs' },
-  { title: 'Projects Catalog', type: 'Frontend', stack: 'HTML · CSS · JavaScript', description: 'Character catalog website created for an event, focused on visual presentation and lightweight frontend interaction.', url: 'https://github.com/Jhunkcion/projects' },
-  { title: 'Portfolio Website', type: 'Frontend', stack: 'HTML · CSS · JavaScript · AOS', description: 'Commission and portfolio website originally developed without a framework, using custom frontend work and animation libraries.', url: 'https://github.com/Jhunkcion/NekomaruKiyo.github.io' },
+  { title: 'SiAMang', type: 'FULL STACK', stack: 'Laravel · MySQL · Bootstrap', description: 'Digital internship administration platform with registration, document upload, OTP verification, approval workflow, reporting, and multi-campus support.', url: 'https://github.com/Jhunkcion/SiAMang', tone: 'lime' },
+  { title: 'CitraComm', type: 'WEB APP', stack: 'Next.js · Dashboard', description: 'Printing-service storefront and admin dashboard with catalog, gallery showcase, and role-based login flow.', url: 'https://github.com/Jhunkcion/citracomm', tone: 'blue' },
+  { title: 'Imigrasi Sumut', type: 'WEB SYSTEM', stack: 'Laravel 11 · PHP', description: 'Web application project built around a Laravel 11 backend and structured application services.', url: 'https://github.com/Jhunkcion/imigrasisumut', tone: 'orange' },
+  { title: 'API Documentation', type: 'DOCUMENTATION', stack: 'HTML · CSS · JavaScript', description: 'Interactive API documentation interface with endpoint sections, HTTP methods, parameters, and expandable details.', url: 'https://github.com/Jhunkcion/BBPSDMP-Komdigi-s-API-Docs', tone: 'purple' },
+  { title: 'Projects Catalog', type: 'FRONTEND', stack: 'HTML · CSS · JavaScript', description: 'Character catalog website created for an event, focused on visual presentation and lightweight frontend interaction.', url: 'https://github.com/Jhunkcion/projects', tone: 'pink' },
+  { title: 'Portfolio Website', type: 'FRONTEND', stack: 'HTML · CSS · JavaScript · AOS', description: 'Commission and portfolio website using custom frontend work and animation libraries.', url: 'https://github.com/Jhunkcion/NekomaruKiyo.github.io', tone: 'yellow' },
 ];
 
 const skills = ['React', 'JavaScript', 'TypeScript', 'HTML / CSS', 'Node.js', 'Laravel', 'PHP', 'MySQL', 'REST API', 'Git / GitHub', 'Bootstrap', 'Next.js'];
@@ -16,36 +16,29 @@ const skills = ['React', 'JavaScript', 'TypeScript', 'HTML / CSS', 'Node.js', 'L
 function App() {
   return <>
     <header className="nav">
-      <a className="brand" href="#home">J<span>.</span></a>
-      <nav><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+      <a className="brand" href="#home">Jhunkcion<span>®</span></a>
+      <nav><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Stack</a><a href="#contact">Contact</a></nav>
+      <a className="nav-cta" href="https://github.com/Jhunkcion" target="_blank" rel="noreferrer">GitHub ↗</a>
     </header>
 
     <main>
       <section id="home" className="hero">
-        <div className="eyebrow">FULL STACK DEVELOPER · MEDAN</div>
-        <h1>Building digital products<br /><em>that solve real problems.</em></h1>
-        <p className="hero-copy">I’m Jhunkcion, a developer focused on modern web applications, clean interfaces, and practical systems—from frontend experiences to backend workflows.</p>
-        <div className="actions"><a className="button primary" href="#work">View selected work</a><a className="button" href="https://github.com/Jhunkcion" target="_blank" rel="noreferrer">GitHub ↗</a></div>
-        <div className="hero-meta"><span>Based in Indonesia</span><span>Available for projects</span><span>Web · Systems · API</span></div>
+        <div className="hero-top"><span>FULL STACK DEVELOPER</span><span>BASED IN INDONESIA</span></div>
+        <div className="hero-title-wrap"><div className="status-dot" /><h1>Building digital<br /><span>experiences</span> that matter.</h1></div>
+        <div className="hero-bottom"><p>I’m Jhunkcion — a full stack developer who turns ideas, requirements, and messy problems into useful web products.</p><a className="circle-link" href="#work" aria-label="Scroll to work">↓</a></div>
       </section>
 
-      <section id="work" className="section">
-        <div className="section-head"><div><div className="eyebrow">SELECTED WORK</div><h2>Projects with purpose.</h2></div><span className="count">06 projects</span></div>
-        <div className="project-grid">{projects.map((project, i) => <article className="project" key={project.title}>
-          <div className="project-number">0{i + 1}</div><div className="project-type">{project.type}</div><h3>{project.title}</h3><p>{project.description}</p><div className="stack">{project.stack}</div><a href={project.url} target="_blank" rel="noreferrer">View repository <span>↗</span></a>
-        </article>)}</div>
-      </section>
+      <section className="intro section"><div className="section-label">01 — ABOUT</div><div className="intro-content"><h2>Developer by craft.<br /><span>Problem solver by nature.</span></h2><div><p>I work across frontend and backend, with a focus on clean interfaces, reliable systems, and practical engineering.</p><a className="text-link" href="#contact">More about me <span>↗</span></a></div></div></section>
 
-      <section id="about" className="split section">
-        <div><div className="eyebrow">ABOUT</div><h2>From interface to infrastructure.</h2></div>
-        <div className="about-copy"><p>I work across the stack, turning requirements into maintainable web products. My GitHub work spans frontend interfaces, Laravel systems, API documentation, admin dashboards, and responsive websites.</p><p>I care about useful architecture, predictable behavior, and interfaces that feel intentional rather than merely functional.</p></div>
-      </section>
+      <section id="work" className="section work"><div className="section-head"><div className="section-label">02 — SELECTED WORK</div><a className="text-link" href="https://github.com/Jhunkcion?tab=repositories" target="_blank" rel="noreferrer">All repositories ↗</a></div><h2 className="display-title">Things I’ve <span>built.</span></h2><div className="project-grid">{projects.map((project, i) => <article className={`project ${project.tone}`} key={project.title}><div className="project-visual"><span className="visual-mark">{String(i + 1).padStart(2, '0')}</span><span className="visual-arrow">↗</span></div><div className="project-info"><div><span className="project-type">{project.type}</span><h3>{project.title}</h3></div><p>{project.description}</p><div className="project-footer"><span>{project.stack}</span><a href={project.url} target="_blank" rel="noreferrer">View project ↗</a></div></div></article>)}</div></section>
 
-      <section id="skills" className="section skills"><div className="eyebrow">TOOLKIT</div><h2>Technologies I work with.</h2><div className="skill-list">{skills.map(skill => <span key={skill}>{skill}</span>)}</div></section>
+      <section id="about" className="section manifesto"><div className="section-label">03 — APPROACH</div><h2>Good software should feel <span>simple.</span><br />Good design should feel <span>inevitable.</span></h2><p>I care about the details people notice and the ones they don’t: hierarchy, performance, responsive behavior, maintainability, and the small interactions that make a product feel considered.</p></section>
 
-      <section id="contact" className="contact section"><div className="eyebrow">LET’S BUILD</div><h2>Have a problem worth solving?</h2><p>Let’s turn the idea into a working product.</p><a className="button primary" href="https://github.com/Jhunkcion" target="_blank" rel="noreferrer">Connect on GitHub ↗</a></section>
+      <section id="skills" className="section stack-section"><div className="section-label">04 — TOOLKIT</div><div className="stack-layout"><h2>My current<br /><span>stack.</span></h2><div className="skill-list">{skills.map((skill, i) => <span key={skill}><small>{String(i + 1).padStart(2, '0')}</small>{skill}</span>)}</div></div></section>
+
+      <section id="contact" className="contact section"><div className="section-label">05 — CONTACT</div><div className="contact-inner"><p>Have an idea, product, or problem to solve?</p><h2>Let’s make<br /><span>something useful.</span></h2><a className="contact-button" href="https://github.com/Jhunkcion" target="_blank" rel="noreferrer">Start a conversation <b>↗</b></a></div></section>
     </main>
-    <footer><span>© {new Date().getFullYear()} Jhunkcion</span><span>Built with React</span></footer>
+    <footer><span>© {new Date().getFullYear()} Jhunkcion</span><span>React · Built with intention</span><a href="#home">Back to top ↑</a></footer>
   </>;
 }
 
