@@ -3,8 +3,24 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const projects = [
-  { title: 'YOUR PROJECT 01', type: 'PROJECT TYPE', stack: 'TECH STACK · HERE', description: 'Add your project description here. Replace this placeholder with the purpose, features, and technical highlights of your project.', url: '#', tone: 'lime' },
-  { title: 'YOUR PROJECT 02', type: 'PROJECT TYPE', stack: 'TECH STACK · HERE', description: 'Add your project description here. Replace this placeholder with the purpose, features, and technical highlights of your project.', url: '#', tone: 'orange' },
+  {
+    title: 'SiAMang',
+    type: 'INTERNSHIP MANAGEMENT SYSTEM',
+    stack: 'LARAVEL 11 · PHP · MYSQL · FILAMENT',
+    description: 'Sistem informasi berbasis web untuk mengelola pendaftaran magang, dokumen, status pengajuan, approval, laporan, dan administrasi mahasiswa.',
+    image: 'https://github.com/Jhunkcion/SiAMang/blob/main/public/Bootslander/assets/img/gambar.png?raw=1',
+    url: 'https://github.com/Jhunkcion/SiAMang',
+    tone: 'lime'
+  },
+  {
+    title: 'Imigrasi Sumut',
+    type: 'INSTITUTIONAL WEBSITE',
+    stack: 'LARAVEL · PHP · MYSQL · JAVASCRIPT',
+    description: 'Website institusional Kementerian Imigrasi dan Pemasyarakatan Sumatera Utara dengan pengelolaan berita, informasi, destinasi, layanan, dan konten publik.',
+    image: 'https://github.com/Jhunkcion/imigrasisumut/blob/main/ScreenShot/user-home.jpg?raw=1',
+    url: 'https://github.com/Jhunkcion/imigrasisumut',
+    tone: 'orange'
+  },
 ];
 
 const skills = [
@@ -44,7 +60,7 @@ function App() {
 
       <section id="about" className="intro section"><div className="section-label">01 — ABOUT</div><div className="intro-content"><h2>Developer by craft.<br /><span>Problem solver by nature.</span></h2><div><p>I’m a fresh graduate with a Bachelor’s degree in Informatics Engineering from <a href="https://unprimdn.ac.id/" target="_blank" rel="noreferrer">UNPRI | Universitas Prima Indonesia</a>. I work across frontend, backend, and mobile development, with a focus on clean interfaces, reliable systems, and practical engineering.</p><a className="text-link" href="https://unprimdn.ac.id/" target="_blank" rel="noreferrer">UNPRI | Universitas Prima Indonesia <span>↗</span></a></div></div></section>
 
-      <section id="work" className="section work"><div className="section-head"><div className="section-label">02 — SELECTED WORK</div><a className="text-link" href="https://github.com/Jhunkcion?tab=repositories" target="_blank" rel="noreferrer">GitHub repositories ↗</a></div><h2 className="display-title">Things I’ve <span>built.</span></h2><div className="project-grid">{projects.map((project, i) => <article className={`project ${project.tone}`} key={project.title}><div className="project-visual"><span className="visual-mark">{String(i + 1).padStart(2, '0')}</span><span className="visual-arrow">↗</span></div><div className="project-info"><div><span className="project-type">{project.type}</span><h3>{project.title}</h3></div><p>{project.description}</p><div className="project-footer"><span>{project.stack}</span><a href={project.url} target="_blank" rel="noreferrer">View project ↗</a></div></div></article>)}</div></section>
+      <section id="work" className="section work"><div className="section-head"><div className="section-label">02 — SELECTED WORK</div><a className="text-link" href="https://github.com/Jhunkcion?tab=repositories" target="_blank" rel="noreferrer">GitHub repositories ↗</a></div><h2 className="display-title">Things I’ve <span>built.</span></h2><div className="project-grid">{projects.map((project, i) => <article className={`project ${project.tone}`} key={project.title}><a className="project-visual" href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} repository`}><img src={project.image} alt={`${project.title} project preview`} loading="lazy" /><span className="visual-overlay" /><span className="visual-mark">{String(i + 1).padStart(2, '0')}</span><span className="visual-arrow">↗</span></a><div className="project-info"><div><span className="project-type">{project.type}</span><h3>{project.title}</h3></div><p>{project.description}</p><div className="project-footer"><span>{project.stack}</span><a href={project.url} target="_blank" rel="noreferrer">View project ↗</a></div></div></article>)}</div></section>
 
       <section id="skills" className="section stack-section"><div className="section-label">03 — TOOLKIT</div><div className="stack-layout"><h2>My current<br /><span>stack.</span></h2><div className="skill-list">{skills.map((skill, i) => <span key={skill.name}><small>{String(i + 1).padStart(2, '0')}</small><img src={skill.icon} alt="" aria-hidden="true" />{skill.name}</span>)}</div></div></section>
 
