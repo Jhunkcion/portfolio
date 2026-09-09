@@ -64,7 +64,7 @@ function App() {
 
       <section id="contact" className="contact section"><div className="section-label">04 — CONTACT</div><div className="contact-inner"><p>Have an idea, product, or problem to solve?</p><h2>Let’s make<br /><span>something useful.</span></h2><div className="social-buttons"><a className="contact-button" href="https://www.linkedin.com/in/adityaperibadi/" target="_blank" rel="noreferrer"><span>LinkedIn</span><b>↗</b></a><a className="contact-button" href="https://www.instagram.com/jhunkcion/" target="_blank" rel="noreferrer"><span>Instagram</span><b>↗</b></a></div></div></section>
     </main>
-    <footer><span>© {new Date().getFullYear()} Jhunkcion</span><span>React · Built with intention</span><a href="#home">Back to top ↑</a></footer>
+    <footer><div className="footer-main"><span>© {new Date().getFullYear()} Jhunkcion</span><span>React · Built with intention</span><a href="#home">Back to top ↑</a></div><div className="footer-sub"><span>FULL STACK · MOBILE · WEB</span><span>MEDAN, INDONESIA</span></div></footer>
   </>;
 }
 
