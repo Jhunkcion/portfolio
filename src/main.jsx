@@ -9,7 +9,7 @@ const projects = [
     stack: 'WEB · LARAVEL · MYSQL',
     description: 'A web-based internship management system for managing internship activities, participants, and related administration.',
     url: 'https://github.com/Jhunkcion/SiAMang',
-    image: 'https://raw.githubusercontent.com/Jhunkcion/SiAMang/main/README/siamang.png',
+    image: 'https://github.com/Jhunkcion/SiAMang/blob/main/public/Bootslander/assets/img/gambar.png?raw=1',
     tone: 'lime'
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     stack: 'WEB · LARAVEL · MYSQL',
     description: 'Institutional website project for Kementerian Imigrasi dan Pemasyarakatan Sumatera Utara.',
     url: 'https://github.com/Jhunkcion/imigrasisumut',
-    image: 'https://raw.githubusercontent.com/Jhunkcion/imigrasisumut/main/ScreenShot/user-home.jpg',
+    image: 'https://github.com/Jhunkcion/imigrasisumut/blob/main/ScreenShot/user-home.jpg?raw=1',
     tone: 'orange'
   },
 ];
