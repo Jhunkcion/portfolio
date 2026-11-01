@@ -4,6 +4,16 @@ import './styles.css';
 
 const projects = [
   {
+    title: 'Crevia',
+    type: 'COMPANY WEBSITE',
+    stack: 'WEB · REACT · TYPESCRIPT',
+    description: 'A company website for CREVIA, built with React and TypeScript.',
+    url: 'https://github.com/Jhunkcion/Crevia',
+    demo: 'https://crevia-alpha.vercel.app/#',
+    image: 'https://github.com/Jhunkcion/Crevia/blob/main/public/project-cover.png?raw=1',
+    tone: 'lime'
+  },
+  {
     title: 'SiAMang',
     type: 'INTERNSHIP MANAGEMENT SYSTEM',
     stack: 'WEB · LARAVEL · MYSQL',
@@ -58,7 +68,7 @@ function App() {
 
       <section id="about" className="intro section"><div className="section-label">01 — ABOUT</div><div className="intro-content"><h2>Developer by craft.<br /><span>Problem solver by nature.</span></h2><div><p>I’m a fresh graduate with a Bachelor’s degree in Informatics Engineering from <a href="https://unprimdn.ac.id/" target="_blank" rel="noreferrer">UNPRI | Universitas Prima Indonesia</a>. I work across frontend, backend, and mobile development, with a focus on clean interfaces, reliable systems, and practical engineering.</p><a className="text-link" href="https://unprimdn.ac.id/" target="_blank" rel="noreferrer">UNPRI | Universitas Prima Indonesia <span>↗</span></a></div></div></section>
 
-      <section id="work" className="section work"><div className="section-head"><div className="section-label">02 — SELECTED WORK</div><a className="text-link" href="https://github.com/Jhunkcion?tab=repositories" target="_blank" rel="noreferrer">GitHub repositories ↗</a></div><h2 className="display-title">Things I’ve <span>built.</span></h2><div className="project-grid">{projects.map((project) => <article className={`project ${project.tone}`} key={project.title}><div className="project-visual"><img src={project.image} alt={`${project.title} project preview`} /><span className="visual-arrow">↗</span></div><div className="project-info"><div><span className="project-type">{project.type}</span><h3>{project.title}</h3></div><p>{project.description}</p><div className="project-footer"><span>{project.stack}</span><a href={project.url} target="_blank" rel="noreferrer">View project ↗</a></div></div></article>)}</div></section>
+      <section id="work" className="section work"><div className="section-head"><div className="section-label">02 — SELECTED WORK</div><a className="text-link" href="https://github.com/Jhunkcion?tab=repositories" target="_blank" rel="noreferrer">GitHub repositories ↗</a></div><h2 className="display-title">Things I’ve <span>built.</span></h2><div className="project-grid">{projects.map((project) => <article className={`project ${project.tone}`} key={project.title}><div className="project-visual"><img src={project.image} alt={`${project.title} project preview`} /><span className="visual-arrow">↗</span></div><div className="project-info"><div><span className="project-type">{project.type}</span><h3>{project.title}</h3></div><p>{project.description}</p><div className="project-footer"><span>{project.stack}</span><div className="project-links"><a href={project.url} target="_blank" rel="noreferrer">View project ↗</a>{project.demo && <a href={project.demo} target="_blank" rel="noreferrer">Live demo ↗</a>}</div></div></div></article>)}</div></section>
 
       <section id="skills" className="section stack-section"><div className="section-label">03 — TOOLKIT</div><div className="stack-layout"><h2>My current<br /><span>stack.</span></h2><div className="skill-list">{skills.map((skill, i) => <span key={skill.name}><small>{String(i + 1).padStart(2, '0')}</small><img src={skill.icon} alt="" aria-hidden="true" />{skill.name}</span>)}</div></div></section>
 
