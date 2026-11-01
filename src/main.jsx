@@ -10,7 +10,7 @@ const projects = [
     description: 'A company website for CREVIA, built with React and TypeScript.',
     url: 'https://github.com/Jhunkcion/Crevia',
     demo: 'https://crevia-alpha.vercel.app/#',
-    image: 'https://github.com/Jhunkcion/Crevia/blob/main/public/project-cover.png?raw=1',
+    image: '/crevia-thumbnail.png',
     tone: 'lime'
   },
   {
